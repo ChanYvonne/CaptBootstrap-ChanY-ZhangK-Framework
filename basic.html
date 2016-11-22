@@ -3,12 +3,12 @@
   <head>
     <title> Basic Bootstrap Demo </title>
     <link rel="stylesheet" type="text/css" href="boot/css/bootstrap.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="boot/js/bootstrap.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -19,37 +19,31 @@
           <a class="navbar-brand" href="">CaptBootstrap</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="example-navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Link to Nowhere</a></li>
-            <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                  Dropdown
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="">Click Here!</a></li>
-                  <li><a href="">Don't Click Him! Click Me!</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" >
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>  
-      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="">Link to Nowhere</a></li>
+          <li class="dropdown">
+            <a role="button" class="dropdown-toggle" type="button" data-toggle="dropdown">Dropdown
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+          </li>
+        </ul>        
+      </div>  
     </nav>
-    <script src="boot/js/bootstrap.js"></script>
-    <script src="boot/js/npm.js"></script>
+
+    <div class="container-fluid">
+      <div class="jumbotron" style="background-image: url('imgs/bkgrnd.jpg'); color: white;">
+        <center>
+          <h1>Bootstrap Demo</h1>
+          <hr>
+          <p>Simple Bootstrap Demo</p>
+        </center>
+      </div>
+    </div>
+        
   </body>
 
 </html>
