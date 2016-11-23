@@ -2,9 +2,40 @@
 <html>
   <head>
     <title>Foundation Simple</title>
-    <link rel="stylesheet" href="foundation/foundation.css">    
+    <link rel="stylesheet" href="foundation/css/foundation.css">
+    <script src="foundation/js/foundation.js"></script>    
   </head>
   <body>
-
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <strong>CaptBoot</strong>
+      </div>
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="#">Link to Nowhere</a></li>
+          <li>
+            <ul class="menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+          <li>
+            <div class="dropdown menu" data-dropdown-menu>
+              <a href="#">Some Stuff</a>
+              <ul class="menu vertical">
+                <li>Element one</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body> 
 </html>
