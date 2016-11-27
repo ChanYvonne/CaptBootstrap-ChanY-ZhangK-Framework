@@ -3,18 +3,20 @@
   <head>
     <title>Foundation Sample</title>
     <link rel="stylesheet" href="foundation/css/foundation.css">
-    <link rel="stylesheet" href="foundation/js/foundation.js">
-    <script src="foundation/js/foundation.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+    
   </head>
   <body>
-    <div class="top-bar">
+    <div class="top-bar top-bar-container">
       <div class="top-bar-title">
-        <strong>CaptFoundation</strong>
+        <ul class="menu">
+          <li><strong>CaptFoundation</strong></li>
+        </ul>
       </div>
       <div class="top-bar-left">
-        <ul class="menu">
-          <li><a href="#">Link to Nowhere</a></li>
+        <ul class="dropdown menu" data-dropdown-menu>
           <li>
+            <a href="#">DropDown</a>
             <ul class="menu">
               <li><a href="#">HTML</a></li>
               <li><a href="#">CSS</a></li>
@@ -26,77 +28,88 @@
       <div class="top-bar-right">
         <ul class="menu">
           <li class="has-form">
-	    <form>
-	      <div class="row collapse">
-		<div class="small-8 columns">
+	        <form>
+	          <div class="row collapse">
+		        <div class="small-8 columns">
                   <input type="text">
-		</div>
-		<div class="small-4 columns">
+		        </div>
+		        <div class="small-4 columns">
                   <a href="#" class="alert button">Search</a>
-		</div>
-	      </div>
-	    </form>
-	  </li>
+		        </div>
+	          </div>
+	        </form>
+	      </li>
         </ul>
       </div>
     </div>
 
-      <div class="callout">
-	<h3>Explore away! Language barriers are dubbed nonexistent, my friend.</h3>
-      </div>
+    <div class="callout">
+	  <h3>Explore away! Language barriers are dubbed nonexistent, my friend.</h3>
+    </div>
 
-      <div class="large-6 columns">
-	<h1>We are Multilinguists</h1>
-	<form>
-	  <div class="row">
-	    <div class="large-12 columns">
-	      <label>Pick a language:</label>
-	      <input type="radio" name="lang" value="HTML" id="1"><label for="1">HTML</label>
-	      <input type="radio" name="lang" value="CSS" id="2"><label for="2">CSS</label>
-	      <input type="radio" name="lang" value="Javascript" id="3"><label for="3">Javascript</label>
-	      <input type="radio" name="lang" value="Python" id="4"><label for="4">Python</label>
-	      <input type="radio" name="lang" value="Java" id="5"><label for="5">Java</label>
-	      <input type="radio" name="lang" value="Bootstrap" id="6"><label for="6">Bootstrap</label>
-	    </div>
-	  </div>
-	</form>
-      </div>
+    <div class="large-6 columns">
+	    <h1>We are Multilinguists</h1>
+	    <form>
+	      <div class="row">
+	        <div class="large-12 columns">
+	          <label>Pick a language:</label>
+	          <input type="radio" name="lang" value="HTML" id="1"><label for="1">HTML</label>
+	          <input type="radio" name="lang" value="CSS" id="2"><label for="2">CSS</label>
+	          <input type="radio" name="lang" value="Javascript" id="3"><label for="3">Javascript</label>
+	          <input type="radio" name="lang" value="Python" id="4"><label for="4">Python</label>
+	          <input type="radio" name="lang" value="Java" id="5"><label for="5">Java</label>
+	          <input type="radio" name="lang" value="Bootstrap" id="6"><label for="6">Bootstrap</label>
+	        </div>
+	      </div>
+	    </form>
+    </div>
+    
+    <div class="large-6 columns">
+	  <h2>Some Resources for Further Analysis</h2>
+	  <table>
+	    <thead>
+	      <th>Language</th>
+	      <th>Website</th>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td>HTML</td>
+	        <td><a href="http://www.w3schools.com/html/">W3Schools is cool</a></td>
+	      </tr>
+	      <tr>
+	        <td>CSS</td>
+	        <td><a href="http://www.htmldog.com/guides/css/beginner/">HTML Dog is playful</a></td>
+	      </tr>
+	      <tr>
+	        <td>Javascript</td>
+	        <td><a href="https://www.javascript.com/">JS is sizzlin</a></td>
+	      </tr>
+	      <tr>
+	        <td>Python</td>
+	        <td><a href="https://www.codecademy.com/learn/python">Codeacademy is helpful</a></td>
+	      </tr>
+	      <tr>
+	        <td>Java</td>
+	        <td><a href="https://www.tutorialspoint.com/java/">Tutorials Point is fruitful</a></td>
+	      </tr>
+	      <tr>
+	        <td>Bootstrap</td>
+	        <td><a href="http://getbootstrap.com/">Documentation is handy</a></td>
+	      </tr>
+	    </tbody>
+	  </table>
+    </div>
 
-      <div class="large-6 columns">
-	<h2>Some Resources for Further Analysis</h2>
-	<table>
-	  <thead>
-	    <th>Language</th>
-	    <th>Website</th>
-	  </thead>
-	  <tbody>
-	    <tr>
-	      <td>HTML</td>
-	      <td><a href="http://www.w3schools.com/html/">W3Schools is cool</a></td>
-	    </tr>
-	    <tr>
-	      <td>CSS</td>
-	      <td><a href="http://www.htmldog.com/guides/css/beginner/">HTML Dog is playful</a></td>
-	    </tr>
-	    <tr>
-	      <td>Javascript</td>
-	      <td><a href="https://www.javascript.com/">JS is sizzlin</a></td>
-	    </tr>
-	    <tr>
-	      <td>Python</td>
-	      <td><a href="https://www.codecademy.com/learn/python">Codeacademy is helpful</a></td>
-	    </tr>
-	    <tr>
-	      <td>Java</td>
-	      <td><a href="https://www.tutorialspoint.com/java/">Tutorials Point is fruitful</a></td>
-	    </tr>
-	    <tr>
-	      <td>Bootstrap</td>
-	      <td><a href="http://getbootstrap.com/">Documentation is handy</a></td>
-	    </tr>
-	  </tbody>
-	</table>
-      </div>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
 
+    
+    <script src="foundation/js/vendor/jquery.js"></script>
+    <script src="foundation/js/vendor/what-input.min.js"></script>
+    <script src="foundation/js/vendor/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    
   </body> 
 </html>
